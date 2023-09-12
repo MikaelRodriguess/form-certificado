@@ -1,8 +1,8 @@
 const form = document.getElementById("form");
-const username = document.getElementById("user");
+const username = document.getElementById("username");
 const password = document.getElementById("password");
 const email = document.getElementById("email");
-const passwordConfirmation = document.getElementById("password-confirmation");
+const passwordConfirmation = document.getElementById("password confirmation");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -25,7 +25,7 @@ function checkInputEmail(){
     const emailValue =  email.value;
 
     if (emailValue == ""){
-        errorInput(email, "Preencha um username!")
+        errorInput(email, "Preencha um email!")
     }else{
         const formItem = email.parentElement;
         formItem.classList = "form content"
@@ -44,7 +44,7 @@ function checkInputPassword(){
 }
 
 function checkInputPasswordConfirmation(){
-    const passwordConfirmation =  passwordConfirmation.value;
+    const passwordConfirmationValue =  passwordConfirmation.value;
     const passwordValue = password.value;
 
     if (passwordConfirmationValue == ""){
