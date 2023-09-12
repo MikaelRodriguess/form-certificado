@@ -5,8 +5,6 @@ const email = document.getElementById("email");
 const passwordConfirmation = document.getElementById("password confirmation");
 
 form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
     checkForm();
 })
 
@@ -49,7 +47,7 @@ function checkInputPasswordConfirmation(){
 
     if (passwordConfirmationValue == ""){
         errorInput(passwordConfirmation, "A confirmação de senha é obrigatória!")
-    }else if(confirmationPasswordValue !== passwordValue){
+    }else if(passwordConfirmationValue !== passwordValue){
         errorInput(passwordConfirmation, "As senhas não são iguais.")
     }else{
         const formItem = passwordConfirmation.parentElement;
