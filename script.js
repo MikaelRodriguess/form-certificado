@@ -68,7 +68,7 @@ function checkForm(){
     });
   
     if(isValid){
-      alert("CADASTRADO COM SUCESSO!")
+      alert("Cadastrado com sucesso!")
     }
   
   }
